@@ -41,7 +41,7 @@ def rec_find_data_files(this_dir):
 OPTIONS = {'packages': ['fujian', 'abjad', 'lychee', 'shelfex']}
 
 setup(
-    console=['nCoda.py'],
-    data_files=rec_find_data_files("./programs"),
+    console=['backend/nCoda.py'],
+    data_files=rec_find_data_files('./programs'),
     options={'py2exe': OPTIONS},
     )
