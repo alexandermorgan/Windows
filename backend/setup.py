@@ -41,7 +41,7 @@ cwd = os.getcwd()
 OPTIONS = {'packages': ['fujian', 'abjad', 'lychee', 'shelfex']}
 
 setup(
-    console=['backend/nCoda.py'],
+    console=['nCoda.py'],
     data_files=rec_find_data_files(cwd),
     options={'py2exe': OPTIONS},
     )
