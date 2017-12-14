@@ -38,10 +38,7 @@ def rec_find_data_files(this_dir):
     return reversed(all_files)
 
 
-OPTIONS = {
-    'argv_emulation': True,
-    'packages': ['fujian', 'abjad', 'lychee', 'shelfex'],
-    }
+OPTIONS = {'packages': ['fujian', 'abjad', 'lychee', 'shelfex']}
 
 setup(
     console=['nCoda.py'],
