@@ -117,7 +117,8 @@ install:
   # - cp -r hgdemo_config/repo programs/hgdemo
   - pip install pytest
   - pip install mock 
-  - python backend\setup.py py2exe
+  - cd backend
+  - python setup.py
   # by default, all script lines are interpreted as batch
   - echo This is batch
   # to run script as a PowerShell command prepend it with ps:
