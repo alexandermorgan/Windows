@@ -44,7 +44,7 @@ OPTIONS = {
     }
 
 setup(
-    console=['nCoda.py'])
+    console=['nCoda.py']),
     data_files=rec_find_data_files("./programs"),
     options={'py2exe': OPTIONS},
     )
