@@ -37,11 +37,11 @@ def rec_find_data_files(this_dir):
     
     return reversed(all_files)
 
-
+cwd = os.getcwd()
 OPTIONS = {'packages': ['fujian', 'abjad', 'lychee', 'shelfex']}
 
 setup(
     console=['backend/nCoda.py'],
-    data_files=rec_find_data_files('./programs'),
+    data_files=rec_find_data_files(cwd),
     options={'py2exe': OPTIONS},
     )
