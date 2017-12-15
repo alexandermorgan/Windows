@@ -117,7 +117,7 @@ install:
   # - cp -r hgdemo_config/repo programs/hgdemo
   - pip install pytest
   - pip install mock
-  - venv dummy
+  - virtualenv --system-site-packages backend_venv
   - source dummy/bin/activate
   - pip install abjad
   - python
