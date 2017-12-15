@@ -87,6 +87,7 @@ matrix:
 install:
   - ps: Install-Product node $env:nodejs_version
   - git clone --recursive https://github.com/nCoda/julius.git julius
+  - git checkout 4cdad561230e2014991b40687b4434bc83ef9b4f
   - git clone https://github.com/nCoda/lychee.git lychee
   - git clone https://github.com/nCoda/fujian.git fujian
   - git clone https://github.com/nCoda/mercurial-hug.git mercurial-hug
