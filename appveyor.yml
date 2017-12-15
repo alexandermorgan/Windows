@@ -118,13 +118,6 @@ install:
   # - cp -r hgdemo_config/repo programs/hgdemo
   - pip install pytest
   - pip install mock
-  - virtualenv --system-site-packages dummy
-  - dummy\Scripts\activate
-  - pip install abjad
-  - python
-  - note = Note()
-  - show(note)
-  - backend_venv\Scripts\activate
   - cd backend
   - python setup.py py2exe
   # by default, all script lines are interpreted as batch
